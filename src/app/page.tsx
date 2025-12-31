@@ -59,9 +59,10 @@ export default function Home() {
 
           {/* 3D Browser Preview */}
           <div className="relative w-full max-w-5xl mx-auto perspective-[1200px] group animate-fade-in-up delay-300">
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0D9488]/20 to-transparent blur-3xl -z-10 rounded-full opacity-60 transform translate-y-20" />
+            {/* Animated Aura */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#0D9488]/20 via-[#F59E0B]/20 to-transparent blur-[100px] -z-10 rounded-full opacity-60 pointer-events-none mix-blend-multiply" />
 
-            <div className="relative rounded-2xl md:rounded-[2rem] border-[1px] border-zinc-200/50 bg-white/80 backdrop-blur-xl shadow-2xl overflow-hidden transform md:rotate-x-[8deg] transition-all duration-1000 ease-out group-hover:rotate-x-0 group-hover:scale-[1.02]">
+            <div className="relative rounded-2xl md:rounded-[2rem] border-[1px] border-zinc-200/50 bg-white/80 backdrop-blur-xl shadow-2xl overflow-hidden transform md:rotate-x-[8deg] transition-all duration-1000 ease-out group-hover:rotate-x-0 group-hover:scale-[1.02] animate-float">
 
               {/* Browser Chrome */}
               <div className="h-12 border-b border-zinc-100 grid grid-cols-[100px_1fr_100px] items-center px-4 bg-white/50">

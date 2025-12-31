@@ -77,3 +77,21 @@ body {
   background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
